@@ -24,6 +24,8 @@
 			xhr.open('GET', 'https://www.googleapis.com/oauth2/v1/userinfo?alt=json&' + 'access_token=' + ac);
 			xhr.onreadystatechange = function (e) {
 			  console.log(xhr.response);
+			  var udata = xhr.response;
+			  alert("Hello " + udata.name);
 			};
 			xhr.send(null);
 			//alert(ac);
