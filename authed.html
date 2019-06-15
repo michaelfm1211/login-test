@@ -25,7 +25,9 @@
 			xhr.onreadystatechange = function (e) {
 			  console.log(xhr.response);
 			  var udata = xhr.response;
-			  alert("Hello " + udata.name);
+			  //alert("Hello " + udata.name);
+			  console.log("UDATA NAME: " + udata.name);
+			  console.log("RESPONSE NAME: " + xhr.response.name);
 			};
 			xhr.send(null);
 			//alert(ac);
