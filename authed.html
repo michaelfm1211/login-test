@@ -10,8 +10,9 @@
 			var url_string_mod = url_string.split("#");
 			var usm = ""
 			for (var i = 0; i < url_string_mod.length; i++) {
+				usm += url_string_mod[i]
 				if(i != url_string_mod.length-1){
-					usm += url_string_mod[i]
+					usm += "?"
 				}
 			}
 			console.log(usm)
