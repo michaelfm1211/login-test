@@ -21,7 +21,7 @@
 			var ac = url.searchParams.get("access_token");
 			
 			var xhr = new XMLHttpRequest();
-			xhr.open('GET', 'https://www.googleapis.com/oauth2/v1/userinfo?alt=json&' + 'access_token=' + ac]);
+			xhr.open('GET', 'https://www.googleapis.com/oauth2/v1/userinfo?alt=json&' + 'access_token=' + ac);
 			xhr.onreadystatechange = function (e) {
 			  console.log(xhr.response);
 			};
