@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Test Authed</title>
+</head>
+<body>
+	<script type="text/javascript">
+		setTimeout(function(){
+			var url_string = window.location.href;
+			var url = new URL(url_string);
+			var ac = url.searchParams.get("access_token");
+			alert(ac);
+		}, 2500)
+	</script>
+</body>
+</html>
