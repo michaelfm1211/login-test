@@ -10,10 +10,9 @@
 	<!--<script src="https://apis.google.com/js/client.js"></script>-->
 	<script type="text/javascript">
 		//  https://www.googleapis.com/auth/userinfo.profile
-		//var auth_link = "https://accounts.google.com/o/oauth2/v2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.metadata.readonly&include_granted_scopes=true&state=state_parameter_passthrough_value&redirect_uri=https%3A%2F%2Fmichaelfm1211.github.io%2Fauthed&response_type=token&client_id=314350026427-mj8e6g87mg3fifnv2gn4h98r19mrek2f.apps.googleusercontent.com";
 
 		var auth_link = "https://accounts.google.com/o/oauth2/v2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&include_granted_scopes=true&state=state_parameter_passthrough_value&redirect_uri=https%3A%2F%2Fmichaelfm1211.github.io%2Flogin-test%2Fauthed&response_type=token&client_id=314350026427-mj8e6g87mg3fifnv2gn4h98r19mrek2f.apps.googleusercontent.com";
-
+		// https://developers.google.com/identity/protocols/OAuth2UserAgent
 		window.location = auth_link;
 		/*var GoogleAuth; // Google Auth object.
 		function initClient() {
