@@ -5,6 +5,7 @@
 </head>
 <body>
 	<script type="text/javascript">
+		// Preform GET to https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=youraccess_token
 		setTimeout(function(){
 			var url_string = window.location.href;
 			var url_string_mod = url_string.split("#");
@@ -18,6 +19,13 @@
 			//console.log(usm)
 			var url = new URL(usm);
 			var ac = url.searchParams.get("access_token");
+			
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', 'https://www.googleapis.com/oauth2/v1/userinfo?alt=json&' + 'access_token=' + ac]);
+			xhr.onreadystatechange = function (e) {
+			  console.log(xhr.response);
+			};
+			xhr.send(null);
 			//alert(ac);
 		}, 2500)
 	</script>
